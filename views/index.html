@@ -63,25 +63,23 @@
         </td>
       </tr>
       <tr>
-        <td><code>GET [project url]/api/timestamp/1450137600</code></td>
+        <td><code>GET [project url]/api/timestamp/1450137600000</code></td>
         <td>
           <code
-            >{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code
+            >{"unix":1451001600000, "utc":"Fri, 15 Dec 2015 00:00:00 GMT"}</code
           >
         </td>
       </tr>
       <tr>
         <td><code>GET [project url]/api/timestamp/</code></td>
         <td>
-          <code
-            >{"unix":1584152780307,"utc":"Sat, 14 Mar 2020 02:26:20 GMT"}</code
-          >
+          <code>{Current Time}</code>
         </td>
       </tr>
       <tr>
         <td><code>GET [project url]/api/timestamp/22-2-2</code></td>
         <td>
-          <code>{"unix": null, "utc" : "Invalid Date" }</code>
+          <code>{"error":"Invalid Date"}</code>
         </td>
       </tr>
     </table>

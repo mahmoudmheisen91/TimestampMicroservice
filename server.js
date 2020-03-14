@@ -18,11 +18,18 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-// your first API endpoint...
-app.get("/api/timestamp/:date", (req, res) => {
-  let strDate = req.params.date;
-  let date = new Date(strDate);
-  res.json({ unix: date.getTime(), utc: date.toUTCString() });
+// Timestamp API endpoint...
+app.get("/api/timestamp/:date_string?", (req, res) => {
+  let req_date = req.params.date_string;
+  if (+req_date) req_date = +req_date;
+
+  let date = new Date();
+  if (req_date) date = new Date(req_date);
+
+  let obj = { unix: date.getTime(), utc: date.toUTCString() };
+  if (!date.getTime()) obj = { error: "Invalid Date" };
+
+  res.json(obj);
 });
 
 // listen for requests :)
