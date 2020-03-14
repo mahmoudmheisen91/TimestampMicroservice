@@ -64,6 +64,7 @@ form > #submit {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 form > #submit:hover {
@@ -122,4 +123,8 @@ footer {
 code {
   font-family: monospace;
   padding: 2px;
+}
+
+a:visited {
+  color: black;
 }

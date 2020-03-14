@@ -45,7 +45,7 @@
         name="stamp"
         placeholder="Ex: /api/timestamp/2020-1-1"
       /><br />
-      <input id="submit" type="submit" value="Query Date Object" />
+      <input id="submit" type="submit" value="Query Get Endpoint" />
     </form>
 
     <h3>Example Usage:</h3>
@@ -55,7 +55,14 @@
         <th>OUTPUT</th>
       </tr>
       <tr>
-        <td><code>GET [project url]/api/timestamp/2020-1-1</code></td>
+        <td>
+          <code
+            ><a
+              href="https://mahmoudmheisen91-timestampmicroservice.glitch.me/api/timestamp/2020-1-1"
+              >GET [project url]/api/timestamp/2020-1-1</a
+            ></code
+          >
+        </td>
         <td>
           <code
             >{"unix":1577836800000,"utc":"Wed, 01 Jan 2020 00:00:00 GMT"}</code
@@ -63,7 +70,14 @@
         </td>
       </tr>
       <tr>
-        <td><code>GET [project url]/api/timestamp/1450137600000</code></td>
+        <td>
+          <code
+            ><a
+              href="https://mahmoudmheisen91-timestampmicroservice.glitch.me/api/timestamp/1450137600000"
+              >GET [project url]/api/timestamp/1450137600000</a
+            ></code
+          >
+        </td>
         <td>
           <code
             >{"unix":1451001600000, "utc":"Fri, 15 Dec 2015 00:00:00 GMT"}</code
@@ -71,13 +85,27 @@
         </td>
       </tr>
       <tr>
-        <td><code>GET [project url]/api/timestamp/</code></td>
+        <td>
+          <code
+            ><a
+              href="https://mahmoudmheisen91-timestampmicroservice.glitch.me/api/timestamp/"
+              >GET [project url]/api/timestamp/</a
+            ></code
+          >
+        </td>
         <td>
           <code>{Current Time}</code>
         </td>
       </tr>
       <tr>
-        <td><code>GET [project url]/api/timestamp/22-2-2</code></td>
+        <td>
+          <code
+            ><a
+              href="https://mahmoudmheisen91-timestampmicroservice.glitch.me/api/timestamp/22-2-2"
+              >GET [project url]/api/timestamp/22-2-2</a
+            ></code
+          >
+        </td>
         <td>
           <code>{"error":"Invalid Date"}</code>
         </td>
