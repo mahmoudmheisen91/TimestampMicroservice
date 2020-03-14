@@ -1,53 +1,125 @@
-/****** Main Styling ******/
+/* Setup */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #222;
-  background-color: #fafafa;
-  text-align: center;
   line-height: 1.4em;
+  margin-top: 40px;
 }
 
-.container {
-  padding: 0;
-  margin-top: 40px;
+header {
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 0 80px;
+  font-size: larger;
+  font-weight: 400;
+}
+
+header > strong {
+  font-weight: 900;
 }
 
 h3 {
+  text-align: center;
   margin-top: 30px;
 }
 
-.footer {
-  margin-top: 40px;
+/* Start Form Styling */
+.container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto;
 }
 
-.user-stories {
-  position: relative;
-  text-align: justify;
-  max-width: 700px;
-  margin: 15px auto;
+form > label {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  font-weight: bold;
 }
+
+form > #stamp {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  padding: 10px 12px;
+  margin: 5px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+form > #submit {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form > #submit:hover {
+  background-color: #45a049;
+}
+/* End Form Styling */
+
+/* Start Table Styling */
+table.center {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+table.center tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+table.center tr:nth-child(even) {
+  background-color: #fff;
+}
+
+table.center th {
+  color: white;
+  background-color: rgb(29, 118, 219);
+}
+/* End Table Styling */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
 code {
   font-family: monospace;
   padding: 2px;
-  color: black;
-  background-color: #fff;
-}
-ol {
-  list-style-position: outside;
-}
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-.user-stories li {
-  margin-bottom: 1em;
-}
-
-a {
-  color: #2574a9;
 }
