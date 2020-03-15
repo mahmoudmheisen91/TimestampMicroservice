@@ -45,7 +45,7 @@ form > label {
   font-weight: bold;
 }
 
-form > #stamp {
+form > #timestamp {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   padding: 10px 12px;

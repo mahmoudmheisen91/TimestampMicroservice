@@ -37,13 +37,14 @@
       <strong>FreeCodeCamp APIs and Microservices Course, Project 1</strong>
     </header>
 
-    <form class="container" action="">
-      <label for="stamp">Timestamp:</label> <br />
+    <form method="POST" action="/submit-form" class="container">
+
+      <label for="timestamp">Timestamp:</label> <br />
       <input
         type="text"
-        id="stamp"
-        name="stamp"
-        placeholder="Ex: /api/timestamp/2020-1-1"
+        id="timestamp"
+        name="timestamp"
+        placeholder="Enter Time: Ex. 2020-1-1"
       /><br />
       <input id="submit" type="submit" value="Query Get Endpoint" />
     </form>
